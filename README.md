@@ -2,14 +2,16 @@
 
 Aerial is a single page, single screen responsive site template. It is a port of [HTML5 UP's Aerial theme](https://html5up.net/aerial).
 
-![Aerial Theme screenshot](https://raw.githubusercontent.com/sethmacleod/aerial/master/images/screenshot.png)
+![Aerial Theme screenshot](/images/screenshot.png)
+
+In turn this is a fork from https://github.com/sethmacleod/aerial.git which is now gone from github. This fork has subsequently been kept up to date with the html5up template.
 
 ## Installation
 
 Run the following commands inside the folder of your Hugo site:
 
 	$ cd themes
-	$ git clone https://github.com/sethmacleod/aerial.git
+	$ git clone https://github.com/virtualpeter/aerial.git
 
 ## Getting Started
 
@@ -54,4 +56,4 @@ The Scrolling Background:
 
 ## License
 
-This theme is released under the CC BY 3.0 license. For more information, read the [License](https://github.com/sethmacleod/aerial/blob/master/LICENSE.md).
+This theme is released under the CC BY 3.0 license. For more information, read the [License](/LICENSE.md).

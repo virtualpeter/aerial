@@ -6,17 +6,15 @@
 -->
 <html>
 	<head>
-		<title>{{ .Title }}</title>
+		<title>Aerial by HTML5 UP</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 	</head>
-	<body class="loading">
+	<body class="is-preload">
 		<div id="wrapper">
-			<div id="bg" {{ with .Site.Params.bg_scroll}} class="no-scroll" {{end}}></div>
+			<div id="bg"></div>
 			<div id="overlay"></div>
 			<div id="main">
 
@@ -27,7 +25,7 @@
 						<nav>
 							<ul>
 								{{ range .Site.Params.social }}
-								<li><a href="{{ .link | safeURL }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+								<li><a href="{{ .link | safeURL }}" class="icon brands fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
 								{{ end }}
 							</ul>
 						</nav>
@@ -40,9 +38,8 @@
 
 			</div>
 		</div>
-		<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 		<script>
-			window.onload = function() { document.body.className = ''; }
+			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
