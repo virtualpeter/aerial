@@ -26,7 +26,7 @@
 						<nav>
 							<ul>
 								{{ range .Site.Params.social }}
-								<li><a href="{{ .link | safeURL }}" class="icon brands fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+								<li><a href="{{ .link | safeURL }}" rel="me" class="icon brands fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
 								{{ end }}
 							</ul>
 						</nav>
